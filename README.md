@@ -8,10 +8,10 @@ Arguments:
 
 -v: verbouse
 
-
-
 Future additions:
 
 Multithreading
 
 Choice of target color
+
+Saving and loading temp-files
