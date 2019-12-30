@@ -20,13 +20,27 @@ public class ImageFromGif {
 
     public static void main(String[] args) throws IOException {
 
+        File file = null;
+        File outputfile = null;
+
         boolean verbose = false;
-        for (String arg:args) {
-            if (arg.equals("-v")) verbose=true;
+
+        int argnum = 0;
+        for (String arg : args) {
+            if (arg.equals("-v")) verbose = true;
+
+            if (arg.contains("-i")){
+                file = new File(args[argnum+1]);
+                System.out.println("Input set to: "+file);
+            }
+
+            if (arg.contains("-o")){
+                outputfile = new File(args[argnum+1]);
+                System.out.println("Output set to: "+file);
+            }
+
+            argnum++;
         }
-        
-        //Get file from argument
-        File file = new File(args[0]);
 
         int frameCount = 0;
 
@@ -83,20 +97,18 @@ public class ImageFromGif {
 
             imageFile.delete();
 
-            if(verbose) System.out.println("Processing Frame: "+(i+1)+"/"+frameCount);
+            if (verbose) System.out.println("Processing Frame: " + (i + 1) + "/" + frameCount);
         }
 
-        saveImage(outImage, args[1]);
+        saveImage(outImage, outputfile);
 
         originImage.delete();
     }
 
 
-    public static void saveImage(BufferedImage image, String location) {
+    public static void saveImage(BufferedImage image, File file) {
         try {
-            // retrieve image
-            File outputfile = new File(location);
-            ImageIO.write(image, "png", outputfile);
+            ImageIO.write(image, "png", file);
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -138,7 +150,7 @@ public class ImageFromGif {
                     "imageHeight"
             };
 
-            ImageReader reader = (ImageReader)ImageIO.getImageReadersByFormatName("gif").next();
+            ImageReader reader = (ImageReader) ImageIO.getImageReadersByFormatName("gif").next();
             ImageInputStream ciis = ImageIO.createImageInputStream(gif);
             reader.setInput(ciis, false);
 
@@ -159,7 +171,7 @@ public class ImageFromGif {
                 for (int j = 0; j < children.getLength(); j++) {
                     Node nodeItem = children.item(j);
 
-                    if(nodeItem.getNodeName().equals("ImageDescriptor")){
+                    if (nodeItem.getNodeName().equals("ImageDescriptor")) {
                         Map<String, Integer> imageAttr = new HashMap<String, Integer>();
 
                         for (int k = 0; k < imageatt.length; k++) {
@@ -167,16 +179,16 @@ public class ImageFromGif {
                             Node attnode = attr.getNamedItem(imageatt[k]);
                             imageAttr.put(imageatt[k], Integer.valueOf(attnode.getNodeValue()));
                         }
-                        if(i==0){
+                        if (i == 0) {
                             master = new BufferedImage(imageAttr.get("imageWidth"), imageAttr.get("imageHeight"), BufferedImage.TYPE_INT_ARGB);
                         }
                         master.getGraphics().drawImage(image, imageAttr.get("imageLeftPosition"), imageAttr.get("imageTopPosition"), null);
                     }
                 }
 
-                ImageIO.write((RenderedImage) master, "GIF", new File( i + "cloudTemp.gif"));
+                ImageIO.write((RenderedImage) master, "GIF", new File(i + "cloudTemp.gif"));
 
-                if(verbose) System.out.println("Generating Frame: "+(i+1)+"/"+noi);
+                if (verbose) System.out.println("Generating Frame: " + (i + 1) + "/" + noi);
             }
 
         } catch (IOException e) {
