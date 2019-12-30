@@ -1,5 +1,7 @@
 Cloudremover-java
 
+Combines a GIF animation into one single png image
+
 Arguments:
 
 -i: input file
