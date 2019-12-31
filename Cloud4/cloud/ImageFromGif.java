@@ -24,10 +24,13 @@ public class ImageFromGif {
         File outputfile = null;
 
         boolean verbose = false;
+        boolean saveTemp = false;
 
         int argnum = 0;
         for (String arg : args) {
             if (arg.equals("-v")) verbose = true;
+
+            if (arg.equals("-s")) saveTemp = true;
 
             if (arg.contains("-i")){
                 file = new File(args[argnum+1]);
@@ -108,6 +111,11 @@ public class ImageFromGif {
         saveImage(outImage, outputfile);
 
         originImage.delete();
+    }
+
+
+    public static void processImage(BufferedImage image1, BufferedImage image2){
+
     }
 
 
@@ -202,4 +210,8 @@ public class ImageFromGif {
 
         return frameCount;
     }
+
+
+
+
 }

@@ -9,6 +9,14 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="XSLT Stylesheet" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -23,6 +31,15 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\anton.helenius\Documents\GitHub\Cloudremover-java\.idea" />
+    </key>
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -48,5 +65,31 @@
       <updated>1577725470640</updated>
     </task>
     <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="552" y="182" key="#Project_Structure" timestamp="1577828580205">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="552" y="182" key="#Project_Structure/0.0.1920.1050@0.0.1920.1050" timestamp="1577828580205" />
+    <state x="414" y="179" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1577828507378">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="414" y="179" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1577828507378" />
+    <state x="808" y="413" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1577819827822">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="808" y="413" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1577819827822" />
+    <state x="914" y="231" key="FileChooserDialogImpl" timestamp="1577829491652">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="914" y="231" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1577829491652" />
+    <state x="440" y="98" key="SettingsEditor" timestamp="1577828237327">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="440" y="98" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1577828237327" />
+    <state x="342" y="144" key="new project wizard" timestamp="1577827829684">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="342" y="144" key="new project wizard/0.0.1920.1050@0.0.1920.1050" timestamp="1577827829684" />
   </component>
 </project>
