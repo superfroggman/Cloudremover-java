@@ -45,11 +45,6 @@ public class ImageFromGif {
             argnum++;
         }
 
-        if(file==null||outputfile==null){
-            System.out.println("Input or output not set, quitting program");
-            return;
-        }
-
         int frameCount = 0;
 
         //try to get frames from file to arraylist
