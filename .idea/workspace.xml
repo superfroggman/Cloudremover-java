@@ -33,6 +33,7 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -77,10 +78,14 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="808" y="413" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1577819827822" />
-    <state x="914" y="231" key="FileChooserDialogImpl" timestamp="1577829491652">
+    <state x="718" y="396" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1578484306736">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="914" y="231" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1577829491652" />
+    <state x="718" y="396" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1920.1050@0.0.1920.1050" timestamp="1578484306736" />
+    <state x="914" y="231" key="FileChooserDialogImpl" timestamp="1578484322006">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="914" y="231" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1578484322006" />
     <state x="440" y="98" key="SettingsEditor" timestamp="1577828237327">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
